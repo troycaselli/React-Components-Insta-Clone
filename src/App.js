@@ -35,13 +35,15 @@ const App = () => {
      */
     setPosts(posts.map(post => {
       if(post.id === postId) {
-        return {...post, likes: post.likes++}
+        return {...post, likes: post.likes + 1, clicks: post.clicks + 1}
       } else {
         return post;
       }
     }))
     
   };
+
+  // const typeComment =   
 
   return (
     <div className='App'>
